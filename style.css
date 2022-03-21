@@ -22,7 +22,8 @@ body .left-side .img {
 body .left-side .banner {
   display: flex;
   position: absolute;
-  gap: 20px;
+  padding: 10px;
+  opacity: 80%;
   width: 33vw;
   background-color: black;
   top: 80px;
