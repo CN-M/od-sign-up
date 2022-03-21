@@ -1,0 +1,52 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(./fonts/Norse-Bold.otf);
+  :root {
+    box-sizing: border-box;
+  }
+}
+body {
+  display: flex;
+  margin: 0;
+}
+body .left-side {
+  width: 33vw;
+  height: 33vh;
+}
+body .left-side .banner {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+}
+body .left-side .banner .logo {
+  height: 4rem;
+}
+body .left-side .banner p {
+  color: white;
+  font-family: norse-bold;
+  font-size: 4rem;
+}
+body .right-side .top {
+  height: 40vh;
+  width: auto;
+}
+body .right-side .top > p {
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+}
+body .right-side .mid {
+  height: 20vh;
+  width: auto;
+}
+body .right-side .bottom {
+  height: 40vh;
+  width: auto;
+}
+
+img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
