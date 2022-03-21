@@ -1,31 +1,42 @@
 @font-face {
   font-family: norse-bold;
   src: url(./fonts/Norse-Bold.otf);
-  :root {
-    box-sizing: border-box;
-  }
 }
+:root {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 body .left-side {
   width: 33vw;
   height: 33vh;
 }
+body .left-side .img {
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+}
 body .left-side .banner {
   display: flex;
   position: absolute;
-  text-align: center;
-  top: 0px;
+  gap: 20px;
+  width: 33vw;
+  background-color: black;
+  top: 80px;
 }
 body .left-side .banner .logo {
-  height: 4rem;
+  height: 9rem;
 }
 body .left-side .banner p {
   color: white;
   font-family: norse-bold;
   font-size: 4rem;
+}
+body .right-side {
+  width: 50vh;
 }
 body .right-side .top {
   height: 40vh;
@@ -40,13 +51,22 @@ body .right-side .mid {
   height: 20vh;
   width: auto;
 }
+body .right-side .mid form {
+  padding: 20px;
+  border: 1px solid black;
+}
+body .right-side .mid form button {
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 50px;
+  width: 100px;
+  box-shadow: 10px, black;
+}
 body .right-side .bottom {
   height: 40vh;
   width: auto;
-}
-
-img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

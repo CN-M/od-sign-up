@@ -1,31 +1,45 @@
 @font-face {
     font-family: norse-bold;
     src: url(./fonts/Norse-Bold.otf);
+}
 
 :root {
     box-sizing: border-box;
 }
 
 
-}
-
 body {
     display: flex;
     margin: 0;
+    padding: 0;
     // background-color: black;
 
     .left-side {
         width: 33vw;
         height: 33vh;
-
+        
+        .img {
+            // width: 33vw;
+            // background-position: left;
+            background-repeat: no-repeat;
+            background-size: 30% 100%;
+        }
+    
         .banner {
             display: flex;
             position: absolute;
-            text-align: center;
-            top: 0px;
+            // padding: 10px;
+            // text-align: center;
+            gap: 20px;
+
+            width: 33vw;
+            background-color: black;
+            top: 80px;
             
             .logo {
-                height: 4rem;
+                height: 9rem;
+                // padding: 20px;
+                // size: 40px;
             }
 
             p {
@@ -40,6 +54,8 @@ body {
 
     .right-side {
 
+        width: 50vh;
+        
         .top {
             height: 40vh;
             width: auto;
@@ -57,6 +73,19 @@ body {
             
             form {
 
+                padding: 20px;
+                border: 1px solid black;
+
+
+                button {
+                    background-color: #596d48;
+                    color: white;
+                    border-radius: 5px;
+                    border:1px solid;
+                    height: 50px;
+                    width: 100px;
+                    box-shadow: 10px, black;
+                }
             }
         }
         .bottom {
@@ -64,8 +93,4 @@ body {
             width: auto;
         }
     }
-}
-
-img {
-    width: 100%;
 }
