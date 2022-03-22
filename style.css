@@ -40,12 +40,12 @@
 }
 .content .right-side .top {
   height: 40vh;
-  width: auto;
 }
 .content .right-side .top > p {
+  margin-top: 40px;
   font-size: large;
   font-weight: bold;
-  padding: 20px;
+  padding: 0px 20px;
 }
 .content .right-side .mid {
   height: 20vh;
@@ -76,7 +76,6 @@
 }
 .content .right-side .bottom {
   height: 40vh;
-  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
