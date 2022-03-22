@@ -2,61 +2,70 @@
   font-family: norse-bold;
   src: url(./fonts/Norse-Bold.otf);
 }
-:root {
+* {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
+.content {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
-body .left-side {
-  width: 33vw;
-  height: 33vh;
-}
-body .left-side .img {
+.content .left-side {
+  background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 30% 100%;
+  background-size: auto;
+  width: 40vw;
 }
-body .left-side .banner {
+.content .left-side .banner {
   display: flex;
-  position: absolute;
+  margin-top: 120px;
   padding: 10px;
-  opacity: 80%;
-  width: 33vw;
   background-color: black;
-  top: 80px;
+  opacity: 60%;
+  align-items: center;
+  justify-content: center;
 }
-body .left-side .banner .logo {
-  height: 9rem;
+.content .left-side .banner .logo {
+  height: 100px;
 }
-body .left-side .banner p {
+.content .left-side .banner p {
   color: white;
   font-family: norse-bold;
   font-size: 4rem;
 }
-body .right-side {
-  width: 50vh;
+.content .right-side {
+  width: 60vw;
 }
-body .right-side .top {
+.content .right-side .top {
   height: 40vh;
   width: auto;
 }
-body .right-side .top > p {
+.content .right-side .top > p {
   font-size: large;
   font-weight: bold;
   padding: 20px;
 }
-body .right-side .mid {
+.content .right-side .mid {
   height: 20vh;
   width: auto;
 }
-body .right-side .mid form {
+.content .right-side .mid form {
   padding: 20px;
   border: 1px solid black;
 }
-body .right-side .mid form button {
+.content .right-side .mid form .row {
+  margin: 10px;
+  vertical-align: top;
+}
+.content .right-side .mid form .row input {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content .right-side .mid form button {
   background-color: #596d48;
   color: white;
   border-radius: 5px;
@@ -65,7 +74,7 @@ body .right-side .mid form button {
   width: 100px;
   box-shadow: 10px, black;
 }
-body .right-side .bottom {
+.content .right-side .bottom {
   height: 40vh;
   width: auto;
 }

@@ -3,40 +3,36 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
-:root {
+* {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 
-body {
+.content {
     display: flex;
-    margin: 0;
-    padding: 0;
-    // background-color: black;
+    // width: 100vw;
+    // height: 100vh;
 
     .left-side {
-        width: 33vw;
-        height: 33vh;
-        
-        .img {
-            // width: 33vw;
-            // background-position: left;
-            background-repeat: no-repeat;
-            background-size: 30% 100%;
-        }
+        background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 40vw;
     
         .banner {
             display: flex;
-            position: absolute;
+            margin-top: 120px;
             padding: 10px;
-            opacity: 80%;
-
-            width: 33vw;
             background-color: black;
-            top: 80px;
+            opacity: 60%;
+            align-items: center;
+            justify-content: center;
             
             .logo {
-                height: 9rem;
+                height: 100px;
                 // padding: 20px;
                 // size: 40px;
             }
@@ -52,8 +48,7 @@ body {
     }
 
     .right-side {
-
-        width: 50vh;
+        width: 60vw;
         
         .top {
             height: 40vh;
@@ -74,6 +69,20 @@ body {
 
                 padding: 20px;
                 border: 1px solid black;
+                // box-sizing: border-box;
+
+                .row {
+                    margin: 10px;
+                    vertical-align: top;
+                    
+                     
+                    input {
+                        width: 150px;
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                    }
+                }
 
 
                 button {
