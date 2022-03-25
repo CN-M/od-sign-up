@@ -1,0 +1,119 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+// Importing Poppins 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+    
+
+    .left-side {
+        background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 40vw;
+        height: 100%;
+        
+        .banner {
+            display: flex;
+            background-color: black;
+            opacity: 70%;
+            margin-top: 100px;
+            height: 120px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .logo {
+                height: 100px;
+                width: auto;
+            }
+
+            p {
+                color: white;
+                font-family: norse-bold;
+                font-size: 80px;
+            }
+        }
+        .attribution {
+            color: white;
+            text-align: center;
+            // margin-top: 90%;
+
+            a {
+                color: white;
+            }
+        }
+
+    }
+
+    .right-side {
+        width: 60vw;
+        height: auto;
+
+        .top {
+            
+            height: 60vh;
+            padding: 20px;
+            // padding-top: 200px;
+            justify-content: center;
+
+
+            // p:nth-child(2) {
+            //     margin-top: 10px;
+            // }
+            p {
+                font-size: large;
+                font-weight: 900;
+                margin: 10px 0px;
+            }
+        }
+
+        .mid {
+            height: 40vh;
+
+            form {
+                padding: 30px; 
+
+                input,
+                input:focus {
+                    border-radius: 5px;
+                }
+
+                input {
+                    height: 20px;
+                    border: 1px solid black;
+                }
+
+                input:focus {
+                    outline: none;
+                    border: 1px solid blue;
+                    border-radius: 5px;
+                    box-shadow: inset;
+                }
+
+            }
+        }
+        
+        // .bottom {
+        //     padding: 20px;
+        // }
+    }
+}
+// form  { display: table;      }
+// div   { display: table-row;  }
+// label { display: table-cell; }
+// input { display: table-cell; }
