@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: monospace, sans-serif
 }
 
 
@@ -45,6 +46,15 @@
 
             
         }
+        .attribution {
+            color: white;
+
+            a {
+                color: white;
+            }
+
+        }
+
     }
 
     .right-side {
@@ -53,7 +63,7 @@
         .top {
             height: 40vh;
 
-           > p {
+            p {
             margin-top: 40px;
             font-size: large;
             font-weight: bold;
@@ -75,12 +85,21 @@
                     margin: 10px;
                     vertical-align: top;
                     
-                     
+                    label {
+                        float: inline-start;
+                    }
+                    
                     input {
+                        height: 20px;
                         width: 150px;
                         padding: 0;
                         margin: 0;
                         box-sizing: border-box;
+                    }
+
+                    > input:focus {
+                        outline: none;
+                        border:1px solid blue;
                     }
                 }
 
@@ -98,7 +117,13 @@
         }
         .bottom {
             height: 40vh;
+            margin: 100px 20px;
 
         }
     }
 }
+
+form  { display: table;      }
+div   { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
