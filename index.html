@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./style.css"> -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./newstyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,30 +27,32 @@
             </div>
             <div class="mid">
                 <form action="#" method="post">
-        
                     <legend>Let's do this!</legend>
-                    <div class="row">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" id="first_name">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name">
+                    <div class="main-box">
+                        <div class="row">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" id="first_name" placeholder=" ">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder=" " required>
+                        
+                        </div>
+                        <div class="row">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder=" ">
+                        
+                            <label for="phone_num">Phone Number</label>
+                            <input type="tel" name="phone_num" id="phone_num" placeholder=" ">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="confirm_password" name="confirm_password" id="confirm_password" placeholder=" " required>
+                        </div>
                     </div>
-                    <div class="row">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="phone_num">Phone Number</label>
-                        <input type="tel" name="phone_num" id="phone_num">
-                    </div>
-                    <div class="row">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="confirm_password" name="confirm_password" id="confirm_password" required>
-                    </div>
+                </form>
                 <button type="submit">
                     Create Account
                 </button>
-                </form>
+                
             </div>
             <div class="bottom">
                 <p>Already have an account? <a href="#">Log in</a></p>

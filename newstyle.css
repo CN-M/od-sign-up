@@ -16,6 +16,9 @@
   width: 100vw;
 }
 .content .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +29,7 @@
 .content .left-side .banner {
   display: flex;
   background-color: black;
-  opacity: 70%;
+  opacity: 40%;
   margin-top: 100px;
   height: 120px;
   width: 100%;
@@ -34,6 +37,7 @@
   justify-content: center;
 }
 .content .left-side .banner .logo {
+  opacity: 100%;
   height: 100px;
   width: auto;
 }
@@ -45,6 +49,7 @@
 .content .left-side .attribution {
   color: white;
   text-align: center;
+  margin: 10px;
 }
 .content .left-side .attribution a {
   color: white;
@@ -54,34 +59,78 @@
   height: auto;
 }
 .content .right-side .top {
-  height: 60vh;
-  padding: 20px;
+  background-color: whitesmoke;
+  padding: 150px 30px 20px;
   justify-content: center;
 }
 .content .right-side .top p {
-  font-size: large;
+  font-size: x-large;
   font-weight: 900;
   margin: 10px 0px;
 }
-.content .right-side .mid {
-  height: 40vh;
-}
 .content .right-side .mid form {
+  border: 1px solid black;
+}
+.content .right-side .mid form legend {
   padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  font-size: 2rem;
+  font-weight: 900;
 }
-.content .right-side .mid form input,
-.content .right-side .mid form input:focus {
-  border-radius: 5px;
+.content .right-side .mid form .main-box {
+  display: flex;
+  padding: 30px;
+  padding-top: 0px;
+  gap: 30px;
 }
-.content .right-side .mid form input {
+.content .right-side .mid form .main-box label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.content .right-side .mid form .main-box .row {
+  display: flex;
+  flex-direction: column;
+}
+.content .right-side .mid form .main-box input,
+.content .right-side .mid form .main-box input:focus {
+  border-radius: 3px;
+}
+.content .right-side .mid form .main-box input {
   height: 20px;
   border: 1px solid black;
 }
-.content .right-side .mid form input:focus {
+.content .right-side .mid form .main-box input:invalid {
+  outline: none;
+  border: 1px solid red;
+}
+.content .right-side .mid form .main-box input:focus {
   outline: none;
   border: 1px solid blue;
+}
+.content .right-side button {
+  height: 30px;
+  width: 120px;
+  background-color: #596D48;
+  margin: 20px;
+  color: white;
   border-radius: 5px;
-  box-shadow: inset;
+  border: none;
+  font-size: medium;
+}
+.content .right-side button:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+.content .right-side .bottom {
+  margin-left: 20px;
+}
+.content .right-side .bottom p {
+  font-weight: 900;
+}
+.content .right-side .bottom p a {
+  color: #596D48;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
